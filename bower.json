@@ -1,0 +1,35 @@
+{
+  "name": "wedevart",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mihnor/wedevart",
+  "authors": [
+    "mihnor <go@wesense.com.br>"
+  ],
+  "description": "THIS PROJECT IS OPEN AND WANT TO CONNECT ALL DEVARTISTS FROM THE WORLD. UNIFYING ABOUT THE ART AND CODE, AND LESS THE COMMUNITY BEHIND CODE",
+  "main": "?",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "html5",
+    "visual",
+    "programming",
+    "devart",
+    "devartists",
+    "processing"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-bootstrap": "~0.11.0",
+    "bootstrap": "~3.1.1",
+    "angular": "1.3.0-beta.10"
+  }
+}
