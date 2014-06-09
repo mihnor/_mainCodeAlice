@@ -1,3 +1,5 @@
+
+
 function hexToRgb(hex) {
     var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
     return result ? {
@@ -44,7 +46,7 @@ var s0 = function( sketch ) {
   sketch.setup = function() {
     cnv = sketch.createCanvas(400, 400);
     cnv.mousePressed(increaseH);
-    cnv.position(200,200);
+    cnv.position(0,0);
     sketch.rectMode(sketch.CENTER);
     sketch.print("both gray values should change, rect in sketch0 should change only when clicking on canvas0");
   };
@@ -81,7 +83,7 @@ var s0 = function( sketch ) {
 var s1 = function( sketch ) {
 //
 var count = 500;
-var radius = 30;
+var radius = 3;
 //
 var sites = [];
 // sites = new PVector[];
@@ -101,11 +103,8 @@ var colorsRGB = [];
 sketch.setup = function()
 {
     cnv = sketch.createCanvas(1024, 768);
-<<<<<<< HEAD
-    cnv.position(200,200);
-=======
     cnv.position(0,0);
->>>>>>> FETCH_HEAD
+
     // alert(colorRGB);
     colorsRGB = colorsHexToRgb(colors);
     // sketch.background(colorsRGB[4]);
@@ -118,8 +117,6 @@ sketch.setup = function()
 };
 //
 sketch.draw = function(){
-
-
 
 
 
@@ -156,6 +153,8 @@ sketch.mousePressed = function()
 {
     sketch.reset();
     sketch.loop();
+
+    sound.pause();
 }
 //
 //
@@ -163,4 +162,4 @@ sketch.mousePressed = function()
 };
 //
 // var myp5_1 = new p5(s1, 'div1');
-// var myp5_0 = new p5(s0, 'div0');
+var myp5_0 = new p5(s0, 'div0');
