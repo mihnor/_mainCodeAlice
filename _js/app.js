@@ -12,4 +12,13 @@ app.directive('canvasPanel', function(){
 };
 });
 
+
+app.directive('audioPlayer', function(){
+
+  return{
+    restrict:'E',
+    templateUrl: '_template/audio-player.html',
+};
+});
+
 })();

@@ -17,7 +17,7 @@ function colorHexRgb(hex){
   return colorRGB;
 
 };
-
+//returns an array of colors, with the new sintax from colors with p5js. the input is
 function colorsHexToRgb(arrayColors){
 
   var arrayColorsRGB = [];
@@ -44,7 +44,7 @@ var s0 = function( sketch ) {
   sketch.setup = function() {
     cnv = sketch.createCanvas(400, 400);
     cnv.mousePressed(increaseH);
-    cnv.position(0,0);
+    cnv.position(200,200);
     sketch.rectMode(sketch.CENTER);
     sketch.print("both gray values should change, rect in sketch0 should change only when clicking on canvas0");
   };
@@ -80,8 +80,8 @@ var s0 = function( sketch ) {
 
 var s1 = function( sketch ) {
 //
-var count = 1000;
-var radius = 60;
+var count = 500;
+var radius = 30;
 //
 var sites = [];
 // sites = new PVector[];
@@ -100,14 +100,15 @@ var colorsRGB = [];
  var cnv;
 sketch.setup = function()
 {
-    cnv = sketch.createCanvas(400, 400);
-    cnv.position(0,0);
+    cnv = sketch.createCanvas(1024, 768);
+    cnv.position(200,200);
     // alert(colorRGB);
     colorsRGB = colorsHexToRgb(colors);
     // sketch.background(colorsRGB[4]);
     sketch.noStroke();
     sketch.noFill();
     sketch.reset();
+    // sketch.createHTML(<h1>POESIA</h1>);
 
 
 };
@@ -157,5 +158,5 @@ sketch.mousePressed = function()
 //
 };
 //
-var myp5_1 = new p5(s1, 'div1');
-var myp5_0 = new p5(s0, 'div0');
+// var myp5_1 = new p5(s1, 'div1');
+// var myp5_0 = new p5(s0, 'div0');

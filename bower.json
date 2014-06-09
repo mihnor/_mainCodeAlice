@@ -1,16 +1,12 @@
 {
-  "name": "wedevart",
+  "name": "rabo_de_baleia",
   "version": "0.0.0",
   "homepage": "https://github.com/mihnor/wedevart",
   "authors": [
     "mihnor <go@wesense.com.br>"
   ],
-  "description": "THIS PROJECT IS OPEN AND WANT TO CONNECT ALL DEVARTISTS FROM THE WORLD. UNIFYING ABOUT THE ART AND CODE, AND LESS THE COMMUNITY BEHIND CODE",
-  "main": "?",
-  "moduleType": [
-    "globals",
-    "node"
-  ],
+  "description": "rabo de baleia, poesia",
+  "main": "index.html",
   "keywords": [
     "html5",
     "visual",
@@ -21,15 +17,15 @@
   ],
   "license": "MIT",
   "ignore": [
-    "**/.*",
+    "/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "**/.*"
   ],
   "dependencies": {
-    "angular-bootstrap": "~0.11.0",
-    "bootstrap": "~3.1.1",
-    "angular": "1.3.0-beta.10"
-  }
+    "jplayer": "~2.6.3"
+  },
+  "private": true
 }
