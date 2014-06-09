@@ -21,4 +21,12 @@ app.directive('audioPlayer', function(){
 };
 });
 
+app.directive('videoPlayer', function(){
+
+  return{
+    restrict:'E',
+    templateUrl: '_template/video-player.html',
+};
+});
+
 })();
