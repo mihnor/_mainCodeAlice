@@ -1,12 +1,13 @@
-$(document).ready(function(){
-      $("#jquery_jplayer_1").jPlayer({
-        ready: function () {
-          $(this).jPlayer("setMedia", {
-            title: "RABO DE BALEIA",
-            mp3: "_data/rabodebaleia.mp3",
-          });
-        },
-        // swfPath: "/",
-        supplied: "mp3"
-      });
-    });
+var isPaused = false;
+var sound = new Howl({
+  urls: ['_data/rabodebaleia.mp3'],
+  autoplay: true,
+  loop: true,
+  volume: 0.5,
+  onend: function() {
+    alert('Finished!');
+  },
+  onpause: function(){
+    isPaused = true;
+  }
+}).play();;
