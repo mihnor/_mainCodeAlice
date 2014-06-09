@@ -17,7 +17,7 @@ function colorHexRgb(hex){
   return colorRGB;
 
 };
-
+//returns an array of colors, with the new sintax from colors with p5js. the input is
 function colorsHexToRgb(arrayColors){
 
   var arrayColorsRGB = [];
@@ -80,8 +80,8 @@ var s0 = function( sketch ) {
 
 var s1 = function( sketch ) {
 //
-var count = 1000;
-var radius = 60;
+var count = 500;
+var radius = 30;
 //
 var sites = [];
 // sites = new PVector[];
@@ -100,7 +100,7 @@ var colorsRGB = [];
  var cnv;
 sketch.setup = function()
 {
-    cnv = sketch.createCanvas(400, 400);
+    cnv = sketch.createCanvas(1024, 768);
     cnv.position(0,0);
     // alert(colorRGB);
     colorsRGB = colorsHexToRgb(colors);
@@ -108,6 +108,7 @@ sketch.setup = function()
     sketch.noStroke();
     sketch.noFill();
     sketch.reset();
+    // sketch.createHTML(<h1>POESIA</h1>);
 
 
 };
