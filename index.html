@@ -1,19 +1,21 @@
-o<!DOCTYPE html>
+<!DOCTYPE html>
 <html ng-app="basePoesia">
 <head>
   <title>we dev art</title>
+
+<!-- css bootstrap -->
   <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-
-
-
+<!-- css basePoesia -->
   <link rel="stylesheet" type="text/css" href="_css/style.css" />
 
+  <script type="text/javascript" src="bower_components/popcornjs/popcorn.js"></script>
   <script type="text/javascript" src="bower_components/angular/angular.js"></script>
   <script type="text/javascript" src="_js/_libs/p5.min.js"></script>
 
-<script type="text/javascript" src="bower_components/howler/howler.js"></script>
+  <script type="text/javascript" src="bower_components/howler/howler.js"></script>
 
-  <script type="text/javascript" src="_js/player.js"></script>
+  <script type="text/javascript" src="_js/video_player.js"></script>
+  <script type="text/javascript" src="_js/audio_player.js"></script>
   <script type="text/javascript" src="_js/app.js"></script>
   <script type="text/javascript" src="_js/sketch.js"></script>
 
@@ -24,6 +26,7 @@ o<!DOCTYPE html>
 
     <canvas-panel></canvas-panel>
     <audio-player></audio-player>
+    <video-player></video-player>
 
   </body>
 </html>

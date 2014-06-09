@@ -83,7 +83,7 @@ var s0 = function( sketch ) {
 var s1 = function( sketch ) {
 //
 var count = 500;
-var radius = 30;
+var radius = 3;
 //
 var sites = [];
 // sites = new PVector[];
@@ -161,5 +161,5 @@ sketch.mousePressed = function()
 //
 };
 //
-var myp5_1 = new p5(s1, 'div1');
+// var myp5_1 = new p5(s1, 'div1');
 var myp5_0 = new p5(s0, 'div0');

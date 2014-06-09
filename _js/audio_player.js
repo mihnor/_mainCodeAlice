@@ -1,7 +1,7 @@
 var isPaused = false;
 var sound = new Howl({
   urls: ['_data/rabodebaleia.mp3'],
-  autoplay: true,
+  autoplay: false,
   loop: true,
   volume: 0.5,
   onend: function() {
@@ -10,4 +10,4 @@ var sound = new Howl({
   onpause: function(){
     isPaused = true;
   }
-}).play();;
+}).play;;
