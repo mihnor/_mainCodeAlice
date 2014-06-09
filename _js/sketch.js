@@ -101,7 +101,11 @@ var colorsRGB = [];
 sketch.setup = function()
 {
     cnv = sketch.createCanvas(1024, 768);
+<<<<<<< HEAD
     cnv.position(200,200);
+=======
+    cnv.position(0,0);
+>>>>>>> FETCH_HEAD
     // alert(colorRGB);
     colorsRGB = colorsHexToRgb(colors);
     // sketch.background(colorsRGB[4]);
