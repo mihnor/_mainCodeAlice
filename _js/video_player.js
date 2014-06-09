@@ -1,6 +1,7 @@
 // Create a popcporn instance by calling Popcorn("#id-of-my-video")
 var pop = Popcorn("#video");
 
+
     pop.loop(true);
     pop.autoplay(true);
 // play the video right away

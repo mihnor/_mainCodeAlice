@@ -4,7 +4,7 @@
   <title>we dev art</title>
 
 <!-- css bootstrap -->
-  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
 <!-- css basePoesia -->
   <link rel="stylesheet" type="text/css" href="_css/style.css" />
 
@@ -17,15 +17,21 @@
   <script type="text/javascript" src="_js/video_player.js"></script>
   <script type="text/javascript" src="_js/audio_player.js"></script>
   <script type="text/javascript" src="_js/app.js"></script>
-  <script type="text/javascript" src="_js/baleia_sketch.js"></script>
 
+  <script type="text/javascript" src="_js/sketches/tv.js"></script>
+
+<!--
+  <script type="text/javascript" src="_js/_old_sketch.js"></script>
+-->
 
   </head>
-  <body class="container" ng-controller="CanvasController as canvas">
+  <body class="container">
+    <!-- <body class="container" ng-controller="CanvasController as canvas"> -->
+
 
 
     <canvas-panel></canvas-panel>
-    <audio-player></audio-player>
+    <!-- <audio-player></audio-player> -->
     <video-player></video-player>
 
   </body>

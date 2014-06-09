@@ -1,13 +1,27 @@
+
+// http://www.soundsnap.com/search/audio/ocean/score
 var isPaused = false;
-var sound = new Howl({
+var soundMusic = new Howl({
   urls: ['_data/rabodebaleia.mp3'],
-  autoplay: false,
+  autoplay: true,
   loop: true,
-  volume: 0.5,
+  volume: 0.8,
   onend: function() {
-    alert('Finished!');
+
+  },
+}).play;;
+
+
+var isPaused = false;
+var soundOcean = new Howl({
+  urls: ['_data/ocean.mp3'],
+  autoplay: true,
+  loop: true,
+  volume: 0.3,
+  onend: function() {
+
   },
   onpause: function(){
-    isPaused = true;
+
   }
 }).play;;

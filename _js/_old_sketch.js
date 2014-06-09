@@ -162,4 +162,4 @@ sketch.mousePressed = function()
 };
 //
 // var myp5_1 = new p5(s1, 'div1');
-var myp5_0 = new p5(s0, 'div0');
+// var myp5_0 = new p5(s0, 'div0');
