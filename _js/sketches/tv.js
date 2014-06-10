@@ -9,7 +9,7 @@ var cnv;
 
 sketch.setup = function(){
 
-    cnv = sketch.createCanvas(400, 400);
+    cnv = sketch.createCanvas(768, 1024);
     cnv.position(0,0);
 
     // sketch.createCanvas(400, 400);
