@@ -70,8 +70,8 @@ sketch.frame2 = function(){
     sketch.background(50);
     sketch.loadPixels();
     // sketch.ellipse(sketch.mouseX, sketch.mouseY, 20, 20);
-    for (var x = 0; x < sketch.width; x++) {
-      for (var y = 0; y < sketch.height; y++) {
+    for (var x = 0; x < sketch.width; x = x +8) {
+      for (var y = 0; y < sketch.height; y = y +8) {
         var bright = sketch.random(255);
         sketch.pixels[x+y*sketch.width] = sketch.color(bright);
         // sketch.color(bright);
